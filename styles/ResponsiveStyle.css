@@ -1,0 +1,475 @@
+.nav-Bars {
+  height: fit-content;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* #sidebar {
+  display: flex;
+  flex-direction: column;
+  
+  width: calc(100% * 0.75);
+  height: 100vh;
+  background-blend-mode: multiply;
+  background-color: var(--dark);
+  color: var(--light);
+} */
+
+.mobile-Nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--step-0);
+  height: 100vh;
+  /* display: none; */
+}
+
+@media (max-width: 1536px) {
+  .hide-OnMobile {
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  .invest-Text h2 {
+    text-align: center;
+  }
+
+  .about-Img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .invest-Body {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trust-Block {
+    padding: 1rem;
+    max-width: 22rem;
+    min-height: 14rem;
+  }
+
+  /* .invest-Img {
+    width: 100%;
+  } */
+
+  /* .trust-Block {
+    padding: 1rem 1rem;
+  } */
+
+  .col-3 {
+    width: 75%;
+  }
+
+  .tax-Benefits,
+  .tax-Incentives {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .head-Section-Home {
+    width: ;
+  } */
+  .col-3 {
+    width: 75%;
+  }
+
+  .col-2 {
+    width: 75%;
+  }
+
+  .head-Nav {
+    padding: 0rem 4rem;
+  }
+
+  h1 {
+    font-size: var(--step-3);
+  }
+
+  h2 {
+    font-size: var(--step-2);
+  }
+
+  h3 {
+    font-size: var(--step-1);
+  }
+
+  h4 {
+    font-size: var(--step-0);
+  }
+  p {
+    font-size: var(--step--1);
+  }
+
+  ul {
+    font-size: var(--step--1);
+  }
+
+  .hide-OnMobile {
+    display: none;
+  }
+
+  .services-Top,
+  .services-Middle,
+  .services-Bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .services-Box {
+    width: 75%;
+    /* align-self: center; */
+  }
+
+  .services-Button {
+    align-self: center;
+    width: 25%;
+  }
+
+  .services-Top h2,
+  .services-Top p {
+    width: 75%;
+  }
+
+  .cta-Button-Consult,
+  .cta-Button-Learn {
+    width: 50%;
+  }
+
+  .footer-Section {
+    max-width: 768px;
+    background-position: center;
+  }
+
+  .footer-Top {
+    margin-bottom: 4rem;
+  }
+
+  .footer-Middle {
+    margin-bottom: 3rem;
+  }
+
+  .footer-Right form {
+    gap: var(--step--1);
+  }
+
+  .footer-Button,
+  .footer-Email {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .trust-Text {
+    width: 75%;
+  }
+  .trust-Block {
+    padding: 1rem;
+    max-width: 18rem;
+    min-height: 14rem;
+  }
+  .trust-Block p {
+    width: 100%;
+  }
+
+  .conveyancing-Box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .conveyancing-Block {
+    width: 45%;
+    gap: var(--step--1);
+    padding: 2rem 0rem 0rem 0rem;
+  }
+
+  .convey-Button {
+    width: 33%;
+  }
+
+  .invest-Body {
+    flex-direction: column;
+    gap: var(--step-0);
+  }
+
+  .invest-Right,
+  .consult-Left {
+    width: 100%;
+    gap: var(--step-0);
+    /* flex-direction: row; */
+    align-items: center;
+  }
+
+  .invest-Text,
+  .consult-Text {
+    width: 80%;
+  }
+
+  .consult-Right {
+    order: -1;
+  }
+
+  .consult-Body {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--step-1);
+  }
+
+  .tax-Benefits,
+  .tax-Incentives {
+    flex-direction: column;
+  }
+
+  .benefits-Img-Block {
+    width: 80%;
+    order: -1;
+  }
+
+  .incentive-Img-Block {
+    width: 80%;
+  }
+
+  .benefits-Text,
+  .incentive-Text {
+    width: 90%;
+  }
+
+  .scroller {
+    width: 700px;
+  }
+
+  .invest-Text {
+    width: 100%;
+  }
+
+  .invest-Long .invest-Block {
+    max-width: 300px;
+  }
+
+  .invest-Block-Img {
+    width: 235px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 426px) {
+  .sidebar {
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  .head-Nav {
+    padding: 0rem 2rem;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+
+  .head-Section-Home,
+  .head-Text {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-2 {
+    width: 100%;
+  }
+
+  .button {
+    width: 50%;
+  }
+
+  .key-Section,
+  .colab-Section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .keyPhoto,
+  .colab-Image {
+    width: 80%;
+  }
+
+  .keyPhoto {
+    order: -1;
+  }
+
+  .keyPhoto img,
+  .colab-Image img {
+    width: 100%;
+  }
+
+  .services-Box {
+    width: 90%;
+  }
+
+  .services-Top h2,
+  .services-Top p {
+    width: 100%;
+  }
+
+  .cta-Button-Group {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 90%;
+  }
+
+  .footer-Top,
+  .footer-Middle {
+    flex-direction: column;
+    /* margin-bottom: 2rem; */
+  }
+
+  .footer-Middle {
+    gap: var(--step-2);
+  }
+
+  .footer-Left {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer-Email {
+    width: 65%;
+  }
+
+  .footer-Button {
+    max-width: 35%;
+  }
+
+  .footer-Middle .footer-Right {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer-Bottom {
+    margin-bottom: 2rem;
+  }
+
+  .trust-Text {
+    width: 100%;
+  }
+
+  .bond-Box {
+    flex-direction: column;
+    gap: var(--step-0);
+  }
+
+  .bond-Left,
+  .bond-Right {
+    align-items: center;
+  }
+
+  .conveyancing-Block {
+    width: 90%;
+  }
+
+  .convey-Group {
+    flex-direction: column;
+    gap: var(--step-1);
+  }
+
+  .conveyancing-Text {
+    align-items: center;
+  }
+
+  .invest-Left,
+  .consult-Right {
+    width: 100%;
+  }
+
+  .footer-Top .footer-Left {
+    flex-direction: column;
+  }
+
+  .incentive-Img-Block,
+  .benefits-Img-Block {
+    width: 100%;
+  }
+
+  .scroller {
+    width: 400px;
+  }
+
+  .invest-Text h2 {
+    text-align: center;
+  }
+
+  .inner-Text p {
+    font-size: var(--step--2);
+  }
+
+  .invest-Block {
+    width: 250px;
+    align-items: center;
+  }
+
+  .invest-Block-Img {
+    width: 200px;
+    height: 110px;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .about-Section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-Box {
+    width: 100%;
+    order: -1;
+  }
+
+  .about-Text {
+    width: 90%;
+    gap: var(--step-0);
+  }
+
+  .about-Text h4 {
+    font-size: var(--step--1);
+  }
+}
+
+@media (max-width: 376px) {
+  .scroller {
+    width: 350px;
+  }
+
+  .about-Text h4 {
+    font-size: var(--step--2);
+  }
+}
+
+@media (max-width: 320px) {
+  /* .footer-Top .footer-Left {
+    flex-direction: column;
+  } */
+
+  .trust-Block {
+    width: 100%;
+  }
+
+  .item-Box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bond-Box {
+    gap: var(--step-2);
+  }
+
+  .box-Text {
+    width: 100%;
+  }
+
+  .scroller {
+    width: 300px;
+  }
+}

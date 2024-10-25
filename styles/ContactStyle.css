@@ -1,0 +1,28 @@
+.head-Section-Contact {
+  height: calc(100vh - 4rem);
+  background-image: url(../img/contact-Home.png);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100vh;
+}
+
+/* .about-Section {
+  background-color: var(--light);
+  color: var(--dark);
+  display: flex;
+  gap: var(--step-0);
+  margin-bottom: 100vh;
+} */
+
+.head-Section-About .head-P {
+  /* color: var(--light); */
+  font-weight: 600;
+  /* width: 50%; */
+}

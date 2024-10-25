@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/Styles.css" />
+    <link rel="stylesheet" href="/styles/ContactStyle.css" />
+    <link rel="stylesheet" href="styles/ResponsiveStyle.css">
+    <script
+      src="https://kit.fontawesome.com/105c9c7a5a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="nav/nav.js" defer></script>
+    <title>Invest Rent Grow</title>
+  </head>
+  <body>
+    <div class="nav-Back">
+      <section class="head-Nav">
+        <div class="logo">
+          <a href="Index.html">
+            <img src="/img/Logo Inverted.png" alt="logo" />
+          </a>
+        </div>
+        <nav >
+          <ul>
+            <li class="hide-OnMobile" ><a href="Services.html">Services</a></li>
+            <li class="hide-OnMobile"><a href="Tax_Benefits.html">Tax-Benefits</a></li>
+            <li class="hide-OnMobile"><a href="Invest.html">Investment Opportunities</a></li>
+            <li class="hide-OnMobile"><a href="About_Us.html">About Us</a></li>
+            
+          </ul>
+        </nav>
+        <button
+          type="button"
+          class="nav-Button button hide-OnMobile"
+          onclick="location.href='Contact.html'"
+        >
+          Discover Realty!
+        </button>
+        <div class="hide-NotMobile" >
+          <img src="img/nav_Bars.svg" alt="" class="nav-Bars" onclick=showSideBar()>
+        </div>
+        <div class="mobile-Nav-Block sidebar">
+
+          <nav class="hide-NotMobile">
+            <ul>
+              <li onclick=hideSideBar()><img src="img/nav_X.svg" alt="" class="nav-X" ></li>
+              <li onclick="location.href='Services.html'"><a>Services</a></li>
+              <li onclick="location.href='Tax_Benefits.html'"><a>Tax-Benefits</a></li>
+              <li onclick="location.href='Invest.html'"><a>Investment Opportunities</a></li>
+              <li onclick="location.href='About_Us.html'"><a>About Us</a></li>
+            </ul>
+            <button
+              type="button"
+              class="nav-Button button nav-Mobile"
+              onclick="location.href='Contact.html'"
+            >
+              Discover Realty!
+            </button>
+          </nav>
+        </div>
+      </section>
+    </div>
+
+    <section class="container head-Section-Contact">
+      <span class="head-Text col-2">
+        <h1 class="head-H1">Contact Us</h1>
+        <p class="head-P">
+            Given the large number of orders and requests, our replies might be delayed. Rest assured, we are making every effort to handle everything efficiently during this challenging period, and we sincerely thank you for your patience and support.
+        </p>
+      </span>
+    </section>
+
+    
+
+    <section class="container footer-Section" id="footer">
+        <span class="footer-Top">
+          <div class="footer-Left col-2">
+            <h2>Stay Updated with Property Investment</h2>
+            <p>Receive updates and tips on property investment.</p>
+          </div>
+          <div class="footer-Right col-2">
+            <form action="" method="post">
+              <input
+                type="email"
+                name=""
+                id=""
+                class="footer-Email"
+                placeholder="Your Email Address"
+              />
+              <input
+                type="button"
+                value="Subscribe Now"
+                class="footer-Button button"
+              />
+            </form>
+            <p>By subscribing, you agree to our Terms and Conditions.</p>
+          </div>
+        </span>
+        <span class="footer-Middle">
+          <div class="footer-Left col-2">
+            <div>
+              <p><b>Address:</b></p>
+              <p>South Africa</p>
+            </div>
+            <div>
+              <p><b>Contact:</b></p>
+              <p>info@investrentgrow.com</p>
+            </div>
+          </div>
+          <div class="footer-Right col-2">
+            <div><a href="#">Privacy Policy</a></div>
+            <div><a href="#">Terms of Service</a></div>
+            <div><a href="#">Cookie Settings</a></div>
+          </div>
+        </span>
+        <span class="footer-Bottom col-3">
+          <div class="footer-SocialMedia ">
+            <a href="https://www.instagram.com/investrentgrow" target="_blank">
+              <i class="fa-brands fa-instagram" style="color: #d09a40"></i>
+            </a>
+          </div>
+          <div class="footer-SocialMedia">
+            <a href="https://www.facebook.com/people/IRG-Invest-Rent-Grow/61563979851031/?mibextid=LQQJ4d&rdid=Yv1Z2femyc2p0dbo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F3orCv8zbSnDrjiLZ%2F%3Fmibextid%3DLQQJ4d" target="_blank">
+              
+              <i class="fa-brands fa-facebook" style="color: #d09a40"  
+              EventTarget='_blank'"></i>
+            </a>
+          </div>
+          
+          <br />
+        </span>
+        <div class="footer-Hr">
+            <p class="rights">© 2024 InvestRentGrow. All rights reserved.</p>
+        </d>
+      </section>
+  </body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/Styles.css" />
+    <link rel="stylesheet" href="/styles/InvestStyle.css" />
+    <link rel="stylesheet" href="/styles/ResponsiveStyle.css">
+    <script src="scroller/scroller.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/105c9c7a5a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="nav/nav.js" defer></script>
+    <title>Invest Rent Grow</title>
+  </head>
+  <body>
+    <div class="nav-Back non-Footer">
+      <section class="head-Nav">
+        <div class="logo">
+          <a href="Index.html">
+            <img src="/img/Logo Inverted.png" alt="logo" />
+          </a>
+        </div>
+        <nav >
+          <ul>
+            <li class="hide-OnMobile" ><a href="Services.html">Services</a></li>
+            <li class="hide-OnMobile"><a href="Tax_Benefits.html">Tax-Benefits</a></li>
+            <li class="hide-OnMobile"><a href="Invest.html">Investment Opportunities</a></li>
+            <li class="hide-OnMobile"><a href="About_Us.html">About Us</a></li>
+            
+          </ul>
+        </nav>
+        <button
+          type="button"
+          class="nav-Button button hide-OnMobile"
+          onclick="location.href='Contact.html'"
+        >
+          Discover Realty!
+        </button>
+        <div class="hide-NotMobile" >
+          <img src="img/nav_Bars.svg" alt="" class="nav-Bars" onclick=showSideBar()>
+        </div>
+        <div class="mobile-Nav-Block sidebar">
+
+          <nav class="hide-NotMobile">
+            <ul>
+              <li onclick=hideSideBar()><img src="img/nav_X.svg" alt="" class="nav-X" ></li>
+              <li onclick="location.href='Services.html'"><a>Services</a></li>
+              <li onclick="location.href='Tax_Benefits.html'"><a>Tax-Benefits</a></li>
+              <li onclick="location.href='Invest.html'"><a>Investment Opportunities</a></li>
+              <li onclick="location.href='About_Us.html'"><a>About Us</a></li>
+            </ul>
+            <button
+              type="button"
+              class="nav-Button button nav-Mobile"
+              onclick="location.href='Contact.html'"
+            >
+              Discover Realty!
+            </button>
+          </nav>
+        </div>
+      </section>
+    </div>
+
+    <section class="container head-Section-Invest">
+      <span class="head-Text col-2">
+        <h1 class="head-H1">
+          What Your Future with Smart Real Estate Investments can look like
+        </h1>
+      </span>
+    </section>
+
+    <section class="container invest-Long">
+      <div class="invest-Text">
+        <h2>Traditional Long-Term Rental Properties</h2>
+        <div class="scroller" data-direction="left">
+          <ul class="scroller-Inner">
+            <li class="invest-Block">
+              <h4>Single-Family Homes</h4>
+
+              <img
+                src="img/invest_Single.png"
+                alt="Single-Family"
+                class="invest-Block-Img"
+              />
+              <ul class="inner-Text">
+                <li>
+                  <b>Free-Standing House (Freestanding Dwelling):</b> The most
+                  common type of residential property in South Africa, it is a
+                  standalone house on its own plot of land, usually found in
+                  suburban areas.
+                </li>
+                <li>
+                  <b>Bungalow:</b> A single-story, detached home, popular in
+                  suburban and rural areas.
+                </li>
+                <li>
+                  <b>Cape Dutch Style House:</b> A traditional architectural
+                  style featuring gabled roofs and whitewashed walls, typically
+                  found in the Western Cape region.
+                </li>
+              </ul>
+            </li>
+            <li class="invest-Block">
+              <h4>Multi-Family Homes</h4>
+
+              <img
+                src="img/invest_Multi.png"
+                alt="Multi-Family"
+                class="invest-Block-Img"
+              />
+              <ul class="inner-Text">
+                <li>
+                  <b>Semi-Detached House (Duet):</b> Two houses built side by
+                  side, sharing a common wall but with separate entrances and
+                  yards.
+                </li>
+                <li>
+                  <b>Duplex:</b> A building divided into two separate living
+                  units, one typically stacked on top of the other or
+                  side-by-side.
+                </li>
+                <li>
+                  <b>Townhouse:</b> A row of attached homes, often part of
+                  secure complexes or estates, each with its own entrance but
+                  sharing walls with neighboring units.
+                </li>
+                <li>
+                  <b>Cluster Home:</b> A group of houses built within a gated
+                  complex or estate, offering a balance between free-standing
+                  homes and townhouses. Each home typically has its own yard.
+                </li>
+              </ul>
+            </li>
+            <li class="invest-Block">
+              <h4>Apartments/Flats</h4>
+
+              <img
+                src="img/invest_Flat.png"
+                alt="Flat"
+                class="invest-Block-Img"
+              />
+              <ul class="inner-Text">
+                <li>
+                  <b>Apartments (Flats):</b> Whether in low-rise, mid-rise, or
+                  high-rise buildings, apartments are a common type of rental
+                  property.
+                </li>
+                <li>
+                  <b>Studio Flats:</b> Studio apartments are ideal for students
+                  or single tenants and are commonly rented out in city centers.
+                </li>
+                <li>
+                  <b>Garden Flats:</b> Self-contained units on a property can be
+                  rented out, either to tenants or even as Airbnb units.
+                </li>
+              </ul>
+            </li>
+            <li class="invest-Block">
+              <h4>Condominiums and Sectional Title Units</h4>
+
+              <img
+                src="img/invest_Condo.png"
+                alt="Condo"
+                class="invest-Block-Img"
+              />
+              <ul class="inner-Text">
+                <li>
+                  <b>Sectional Title Flats (Condominiums):</b> You can lease out
+                  an individually owned unit in a sectional title scheme. These
+                  are especially popular in urban areas like Johannesburg, Cape
+                  Town, and Durban.
+                </li>
+                <li>
+                  <b>Townhouse Complexes:</b> Sectional title townhouses can be
+                  leased out like apartments.
+                </li>
+              </ul>
+            </li>
+            <li class="invest-Block">
+              <h4>Gated Communities and Lifestyle Estates</h4>
+
+              <img
+                src="img/invest_Gated.png"
+                alt="Gated Communities"
+                class="invest-Block-Img"
+              />
+              <ul class="inner-Text">
+                <li>
+                  <b>Properties in Gated Communities:</b> You can lease homes in
+                  secure gated communities, which are often attractive to
+                  tenants due to the safety and amenities.
+                </li>
+                <li>
+                  <b>Golf Estates and Lifestyle Estates:</b> These properties
+                  are often leased out to high-income tenants or as vacation
+                  rentals in affluent areas.
+                </li>
+              </ul>
+            </li>
+            <li class="invest-Block">
+              <h4>Student Accommodation and Hostels</h4>
+
+              <img
+                src="img/invest_Student.png"
+                alt="Student Accommodation"
+                class="invest-Block-Img"
+              />
+              <ul class="inner-Text">
+                <li>
+                  <b>Student Residences and Apartments:</b> If you're near a
+                  university or college, leasing out apartments or homes as
+                  student accommodation can be profitable.
+                </li>
+                <li>
+                  <b>Hostels:</b> Some hostels are privately owned and leased
+                  out to students or workers, though they often require specific
+                  zoning.
+                </li>
+              </ul>
+            </li>
+            <li class="invest-Block">
+              <h4>Retirement Communities</h4>
+
+              <img
+                src="img/invest_Retire.png"
+                alt="Student Accommodation"
+                class="invest-Block-Img"
+              />
+              <ul class="inner-Text">
+                <li>
+                  <b>Retirement Village Homes:</b> Some units in retirement
+                  villages can be leased out, although there may be age
+                  restrictions or specific terms within the retirement
+                  community.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container invest-Short">
+      <div class="invest-Text">
+        <h2>Short-Term or Vacation Rentals</h2>
+        <div class="scroller" data-direction="right">
+          <ul class="scroller-Inner">
+            
+            <li class="invest-Block">
+              <h4>Vacation and Second Homes</h4>
+
+              <img
+                src="img/invest_Vacay.png"
+                alt="Traditional"
+                class="invest-Block-Img"
+              />
+              <ul class="inner-Text">
+                <li>
+                  <b>Holiday Homes and Beach Houses:</b> These can be leased out
+                  as short-term rentals or vacation properties, especially in
+                  coastal areas like Cape Town, Durban, or the Garden Route.
+                </li>
+                <li>
+                  <b>Game Lodge Homes:</b> These can be leased to tourists or
+                  wildlife enthusiasts as short-term rentals or seasonal homes.
+                </li>
+              </ul>
+            </li>
+            <li class="invest-Block">
+              <h4>Informal and Traditional Housing</h4>
+
+              <img
+                src="img/invest_Traditional.png"
+                alt="Traditional"
+                class="invest-Block-Img"
+              />
+              <ul class="inner-Text">
+                <li>
+                  <b>Rondavels:</b> While not common, some rondavels are rented
+                  out in rural areas as tourist accommodations.
+                </li>
+              </ul>
+            </li>
+            <li class="invest-Block">
+              <h4>Social and Low-Cost Housing</h4>
+
+              <img
+                src="img/invest_Low.png"
+                alt="Low-Cost"
+                class="invest-Block-Img"
+              />
+              <ul class="inner-Text">
+                <li>
+                  <b>RDP Homes:</b> Although originally intended for ownership
+                  by low-income residents, some RDP homeowners do rent out their
+                  properties, though this may depend on local regulations and
+                  restrictions.
+                </li>
+              </ul>
+            </li>
+            <li class="invest-Block">
+              <h4>Special Considerations</h4>
+
+              <img
+                src="img/invest_Air.png"
+                alt="Condo"
+                class="invest-Block-Img"
+              />
+              <ul class="inner-Text">
+                <li>
+                  <b>Airbnb or Short-Term Rentals:</b> Many of the above types
+                  of properties, especially apartments, houses, and vacation
+                  homes, can be rented out as short-term rentals through
+                  platforms like Airbnb. However, check local laws and community
+                  rules regarding short-term leasing, as some areas have
+                  restrictions.
+                </li>
+                <li>
+                  <b>Townhouse Complexes:</b> Sectional title townhouses can be
+                  leased out like apartments.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container footer-Section" id="footer">
+      <span class="footer-Top">
+        <div class="footer-Left col-2">
+          <h2>Stay Updated with Property Investment</h2>
+          <p>Receive updates and tips on property investment.</p>
+        </div>
+        <div class="footer-Right col-2">
+          <form action="" method="post">
+            <input
+              type="email"
+              name=""
+              id=""
+              class="footer-Email"
+              placeholder="Your Email Address"
+            />
+            <input
+              type="button"
+              value="Subscribe"
+              class="footer-Button button"
+            />
+          </form>
+          <p>By subscribing, you agree to our Terms and Conditions.</p>
+        </div>
+      </span>
+      <span class="footer-Middle">
+        <div class="footer-Left col-2">
+          <div>
+            <p><b>Address:</b></p>
+            <p>South Africa</p>
+          </div>
+          <div>
+            <p><b>Contact:</b></p>
+            <p>info@investrentgrow.com</p>
+          </div>
+        </div>
+        <div class="footer-Right col-2">
+          
+
+            <div><a href="#">Privacy Policy</a></div>
+            <div><a href="#">Terms of Service</a></div>
+            <div><a href="#">Cookie Settings</a></div>
+          
+        </div>
+      </span>
+      <span class="footer-Bottom col-3">
+        <div class="footer-SocialMedia ">
+          <a href="https://www.instagram.com/investrentgrow" target="_blank">
+            <i class="fa-brands fa-instagram" style="color: #d09a40"></i>
+          </a>
+        </div>
+        <div class="footer-SocialMedia">
+          <a href="https://www.facebook.com/people/IRG-Invest-Rent-Grow/61563979851031/?mibextid=LQQJ4d&rdid=Yv1Z2femyc2p0dbo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F3orCv8zbSnDrjiLZ%2F%3Fmibextid%3DLQQJ4d" target="_blank">
+            
+            <i class="fa-brands fa-facebook" style="color: #d09a40"  
+            EventTarget='_blank'"></i>
+          </a>
+        </div>
+        <br />
+      </span>
+      <div class="footer-Hr">
+          <p class="rights">© 2024 InvestRentGrow. All rights reserved.</p>
+      </d>
+    </section>
+  </body>
+</html>

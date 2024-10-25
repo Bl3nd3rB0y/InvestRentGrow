@@ -1,0 +1,82 @@
+.head-Section-Taxes {
+  height: calc(100vh - 4rem);
+  background-image: url(../img/tax_Home.png);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.tax-Benefits {
+  background-color: var(--dark);
+  color: var(--light);
+  display: flex;
+  gap: var(--step-0);
+}
+
+.benefits-Text {
+  width: 55%;
+}
+
+.benefits-Img-Block {
+  width: 45%;
+}
+
+.benefits-Block ul {
+  list-style-position: outside;
+  padding-left: 15px;
+  list-style-image: url(../img/bullet-Circle.svg);
+  line-height: 170%;
+}
+
+.benefits-Img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.benefits-Block,
+.benefits-Text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--step-0);
+  justify-content: center;
+}
+
+.tax-Incentives {
+  background-color: var(--light);
+  color: var(--dark);
+  display: flex;
+  gap: var(--step-0);
+  margin-bottom: 100vh;
+}
+
+.incentive-Text {
+  width: 55%;
+}
+
+.incentive-Img-Block {
+  width: 45%;
+}
+
+.incentive-Block ul {
+  list-style-position: outside;
+  padding-left: 15px;
+  list-style-image: url(../img/bullet_Circle_Invers.svg);
+  line-height: 170%;
+}
+
+.incentive-Img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.incentive-Block,
+.incentive-Text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--step-0);
+  justify-content: center;
+}
