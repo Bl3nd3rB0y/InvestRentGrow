@@ -176,6 +176,13 @@ a:visited {
   cursor: pointer;
 }
 
+.web-Img {
+  width: fit-content;
+  height: fit-content;
+  background-size: cover;
+  background-position: center;
+}
+
 .head-Section-Home {
   height: calc(100vh - 4rem);
   background-image: url(../img/HeaderImg1.png);
@@ -183,8 +190,19 @@ a:visited {
   left: 50%;
   width: 100%;
   background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
+}
+
+.blur-Load {
+  background-size: cover;
+  background-position: center;
+  /* width: fit-content;
+  height: fit-content; */
+  /* top: 50%;
+  left: 50%;
+  width: 100%; */
 }
 
 .head-Text {
@@ -228,6 +246,10 @@ a:visited {
   gap: var(--step-0);
 }
 
+.keyPhoto {
+  border-radius: 10%;
+}
+
 .keyPhoto img {
   width: 100%;
   height: auto;
@@ -239,6 +261,10 @@ a:visited {
   display: flex;
   align-items: center;
   gap: var(--step-2);
+}
+
+.colab-Image {
+  border-radius: 10%;
 }
 
 .colab-Image img {
@@ -293,6 +319,10 @@ a:visited {
   flex-direction: column;
   gap: var(--step-0);
   margin: 1rem;
+}
+
+.block-Image {
+  border-radius: 10% 10% 0% 0%;
 }
 
 .block-Image img {

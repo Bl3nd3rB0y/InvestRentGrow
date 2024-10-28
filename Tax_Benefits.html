@@ -18,7 +18,7 @@
       <section class="head-Nav">
         <div class="logo">
           <a href="index.html">
-            <img src="./img/Logo_Inverted.png" alt="logo" />
+            <img src="./img/Logo_Inverted.png" alt="logo" loading="eager"/>
           </a>
         </div>
         <nav >
@@ -38,13 +38,13 @@
           Discover Realty!
         </button>
         <div class="hide-NotMobile" >
-          <img src="img/nav_Bars.svg" alt="" class="nav-Bars" onclick=showSideBar()>
+          <img src="img/nav_Bars.svg" alt="" class="nav-Bars" onclick=showSideBar() loading="eager">
         </div>
         <div class="mobile-Nav-Block sidebar">
 
           <nav class="hide-NotMobile">
             <ul>
-              <li onclick=hideSideBar()><img src="img/nav_X.svg" alt="" class="nav-X" ></li>
+              <li onclick=hideSideBar()><img src="img/nav_X.svg" alt="" class="nav-X" loading="eager" ></li>
               <li onclick="location.href='Services.html'"><a>Services</a></li>
               <li onclick="location.href='Tax_Benefits.html'"><a>Tax-Benefits</a></li>
               <li onclick="location.href='Invest.html'"><a>Investment Opportunities</a></li>
@@ -61,22 +61,24 @@
         </div>
       </section>
     </div>
+    <div class="blur-Load" style="background-image: url(./img/tax_Home-Mini.png);">
 
-    <section class="container head-Section-Taxes">
-      <span class="head-Text col-2">
-        <h1 class="head-H1">Maximize Your Savings</h1>
-        <p class="head-P">
-          Discover the Best Tax Benefits for Your Financial Future
-        </p>
-        <!-- <button
-            type="button"
-            class="head-Button button"
-            onclick="location.href('#')"
-          >
-            Learn More
-          </button> -->
-      </span>
-    </section>
+      <section class="container head-Section-Taxes">
+        <span class="head-Text col-2">
+          <h1 class="head-H1">Maximize Your Savings</h1>
+          <p class="head-P">
+            Discover the Best Tax Benefits for Your Financial Future
+          </p>
+          <!-- <button
+              type="button"
+              class="head-Button button"
+              onclick="location.href('#')"
+            >
+              Learn More
+            </button> -->
+        </span>
+      </section>
+    </div>
 
     <section class="container tax-Benefits">
         <div class="benefits-Text">
@@ -101,12 +103,12 @@
                 </ul>
             </div>
         </div>
-        <div class="benefits-Img-Block"><img src="img/tax_House.png" alt="house" class="benefits-Img"></div>
+        <div class="benefits-Img-Block blur-Load" style="background-image: url(./img/tax_House-Mini.png);"><img src="img/tax_House.png" alt="house" class="benefits-Img web-Img" loading="lazy"></div>
         
     </section>
 
     <section class="container tax-Incentives">
-        <div class="incentive-Img-Block"><img src="img/tax_Tax.png" alt="tax" class="incentive-Img"></div>
+        <div class="incentive-Img-Block blur-Load" style="background-image: url(./img/tax_Tax-Mini.png);"><img src="img/tax_Tax.png" alt="tax" class="incentive-Img web-Img" loading="lazy"></div>
 
         <div class="incentive-Text">
             <div class="incentive-Block">
@@ -142,10 +144,11 @@
           <p>Receive updates and tips on property investment.</p>
         </div>
         <div class="footer-Right col-2">
-          <form action="" method="post">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="0f165e9a-e747-4f52-90c7-21e0b7fb99e7">
             <input
               type="email"
-              name=""
+              name="email"
               id=""
               class="footer-Email"
               placeholder="Your Email Address"
@@ -155,6 +158,8 @@
               value="Subscribe"
               class="footer-Button button"
             />
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           </form>
           <p>By subscribing, you agree to our Terms and Conditions.</p>
         </div>

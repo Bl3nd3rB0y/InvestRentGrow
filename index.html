@@ -17,7 +17,7 @@
       <section class="head-Nav">
         <div class="logo">
           <a href="index.html">
-            <img src="./img/Logo_Inverted.png" alt="logo" />
+            <img src="./img/Logo_Inverted.png" alt="logo" loading="eager"/>
           </a>
         </div>
         <nav >
@@ -37,13 +37,13 @@
           Discover Realty!
         </button>
         <div class="hide-NotMobile" >
-          <img src="img/nav_Bars.svg" alt="" class="nav-Bars" onclick=showSideBar()>
+          <img src="img/nav_Bars.svg" alt="" class="nav-Bars" onclick=showSideBar() loading="eager">
         </div>
         <div class="mobile-Nav-Block sidebar">
 
           <nav class="hide-NotMobile">
             <ul>
-              <li onclick=hideSideBar()><img src="img/nav_X.svg" alt="" class="nav-X" ></li>
+              <li onclick=hideSideBar()><img src="img/nav_X.svg" alt="" class="nav-X" loading="eager"></li>
               <li onclick="location.href='Services.html'"><a>Services</a></li>
               <li onclick="location.href='Tax_Benefits.html'"><a>Tax-Benefits</a></li>
               <li onclick="location.href='Invest.html'"><a>Investment Opportunities</a></li>
@@ -60,7 +60,7 @@
         </div>
       </section>
     </div>
-
+    <div class="blur-Load" style="background-image: url(./img/HeaderImg1-Mini.png);">
     <section class="container head-Section-Home non-Footer">
       <span class="head-Text col-2">
         <h1 class="head-H1">Unlock The Potential Of Your Property Portfolio</h1>
@@ -77,7 +77,7 @@
         </button>
       </span>
     </section>
-
+  </div>
     <section class="container key-Section non-Footer">
       <span class="key-Text col-2">
         <h2 class="key-H2">
@@ -91,13 +91,13 @@
           your liabilities.
         </p>
       </span>
-      <span class="keyPhoto col-2">
-        <img src="img/KeyMoldMerge.png" alt="key empty" class="key" />
+      <span class="keyPhoto col-2 blur-Load" style="background-image: url(./img/KeyMoldMerge-Mini.png);">
+        <img src="img/KeyMoldMerge.png" alt="key empty" class="key web-Img" loading="lazy"/>
       </span>
     </section>
     <section class="container colab-Section non-Footer">
-      <span class="colab-Image col-2">
-        <img src="img/Home_House.png" alt="house" />
+      <span class="colab-Image col-2 blur-Load" style="background-image: url(./img/Home_House-Mini.png);">
+        <img src="img/Home_House.png" alt="house" loading="lazy"class="web-Img" />
       </span>
       <span class="colab-Text col-2">
         <h2 class="colab-H2">
@@ -121,8 +121,8 @@
       </span>
       <span class="services-Middle">
         <div class="services-Box col-3">
-          <div class="block-Image">
-            <img src="img/Box1.png" alt="" />
+          <div class="block-Image blur-Load" style="background-image: url(./img/Box1-Mini.png);">
+            <img src="img/Box1.png" alt="" loading="lazy" class="web-Img"/>
           </div>
           <div class="block-Text">
             <h3>Expert Guidance and Support</h3>
@@ -135,8 +135,8 @@
         </div>
 
         <div class="services-Box col-3">
-          <div class="block-Image">
-            <img src="img/Box2.png" alt="" />
+          <div class="block-Image blur-Load" style="background-image: url(./img/Box2-Mini.png);">
+            <img src="img/Box2.png" alt="" loading="lazy" class="web-Img"/>
           </div>
           <div class="block-Text">
             <h3>Maximize Your Tax Benefits</h3>
@@ -148,8 +148,8 @@
         </div>
 
         <div class="services-Box col-3">
-          <div class="block-Image">
-            <img src="img/Box3.png" alt="" />
+          <div class="block-Image blur-Load" style="background-image: url(./img/Box3-Mini.png);">
+            <img src="img/Box3.png" alt="" loading="lazy" class="web-Img" />
           </div>
           <div class="block-Text">
             <h3>Diverse Property Portfolio Options</h3>
@@ -204,10 +204,11 @@
           <p>Receive updates and tips on property investment.</p>
         </div>
         <div class="footer-Right col-2">
-          <form action="" method="post">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="0f165e9a-e747-4f52-90c7-21e0b7fb99e7">
             <input
               type="email"
-              name=""
+              name="email"
               id=""
               class="footer-Email"
               placeholder="Your Email Address"
@@ -217,6 +218,8 @@
               value="Subscribe"
               class="footer-Button button"
             />
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           </form>
           <p>By subscribing, you agree to our Terms and Conditions.</p>
         </div>

@@ -35,7 +35,8 @@
 
 .about-Box {
   width: 45%;
-  /* border-radius: ; */
+  height: fit-content;
+  border-radius: calc(600px / 15);
 }
 
 .about-Img {

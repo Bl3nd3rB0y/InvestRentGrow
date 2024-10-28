@@ -18,7 +18,7 @@
       <section class="head-Nav">
         <div class="logo">
           <a href="index.html">
-            <img src="./img/Logo_Inverted.png" alt="logo" />
+            <img src="./img/Logo_Inverted.png" alt="logo" loading="eager"/>
           </a>
         </div>
         <nav >
@@ -38,13 +38,13 @@
           Discover Realty!
         </button>
         <div class="hide-NotMobile" >
-          <img src="img/nav_Bars.svg" alt="" class="nav-Bars" onclick=showSideBar()>
+          <img src="img/nav_Bars.svg" alt="" class="nav-Bars" onclick=showSideBar() loading="eager">
         </div>
         <div class="mobile-Nav-Block sidebar">
 
           <nav class="hide-NotMobile">
             <ul>
-              <li onclick=hideSideBar()><img src="img/nav_X.svg" alt="" class="nav-X" ></li>
+              <li onclick=hideSideBar()><img src="img/nav_X.svg" alt="" class="nav-X" loading="eager" ></li>
               <li onclick="location.href='Services.html'"><a>Services</a></li>
               <li onclick="location.href='Tax_Benefits.html'"><a>Tax-Benefits</a></li>
               <li onclick="location.href='Invest.html'"><a>Investment Opportunities</a></li>
@@ -61,18 +61,20 @@
         </div>
       </section>
     </div>
+    <div class="blur-Load" style="background-image: url(./img/about_Home-Mini.png);">
 
-    <section class="container head-Section-About">
-      <span class="head-Text col-2">
-        <h1 class="head-H1">About Us</h1>
-        <p class="head-P">
-          We make property investment simple. From finding the right property to
-          securing financing and handling legal work, we provide everything you
-          need in one place. Whether you’re just starting or growing your
-          portfolio, we’re here to guide you every step of the way.
-        </p>
-      </span>
-    </section>
+      <section class="container head-Section-About">
+        <span class="head-Text col-2">
+          <h1 class="head-H1">About Us</h1>
+          <p class="head-P">
+            We make property investment simple. From finding the right property to
+            securing financing and handling legal work, we provide everything you
+            need in one place. Whether you’re just starting or growing your
+            portfolio, we’re here to guide you every step of the way.
+          </p>
+        </span>
+      </section>
+    </div>
 
     <section class="container about-Section">
       <div class="about-Text">
@@ -83,8 +85,8 @@
         </h4>
         <p>‘Franklin D. Roosevelt’</p>
       </div>
-      <div class="about-Box">
-        <img src="img/about_Img.png" alt="Sunset" class="about-Img" />
+      <div class="about-Box blur-Load" style="background-image: url(./img/about_Img-Mini.png);">
+        <img src="img/about_Img.png" alt="Sunset" class="about-Img" loading="lazy" />
       </div>
     </section>
 
@@ -95,10 +97,11 @@
           <p>Receive updates and tips on property investment.</p>
         </div>
         <div class="footer-Right col-2">
-          <form action="" method="post">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="0f165e9a-e747-4f52-90c7-21e0b7fb99e7">
             <input
               type="email"
-              name=""
+              name="email"
               id=""
               class="footer-Email"
               placeholder="Your Email Address"
@@ -108,6 +111,8 @@
               value="Subscribe"
               class="footer-Button button"
             />
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           </form>
           <p>By subscribing, you agree to our Terms and Conditions.</p>
         </div>

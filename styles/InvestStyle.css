@@ -37,8 +37,8 @@
 }
 
 .scroller {
-  /* max-width: ; */
-  width: 1000px;
+  max-width: 1000px;
+  /* width: 90%; */
   padding: 1rem;
   /* border: 3px solid var(--accent); */
 }
@@ -47,7 +47,7 @@
   display: flex;
   gap: var(--step-2);
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .invest-Long .invest-Block {
@@ -97,6 +97,9 @@
 .invest-Block-Img {
   width: 335px;
   height: 190px;
+}
+
+.scroller[data-animated="false"] .scroller-Inner {
 }
 
 .scroller[data-animated="true"] {
