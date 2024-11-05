@@ -66,6 +66,7 @@ body {
 }
 
 h1 {
+  font-family: "Montserrat";
   font-size: var(--step-4);
 }
 
