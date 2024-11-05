@@ -342,3 +342,8 @@
   flex-direction: column;
   gap: var(--step-0);
 }
+
+.invest-Text li::marker,
+.consult-Text li::marker {
+  vertical-align: baseline;
+}

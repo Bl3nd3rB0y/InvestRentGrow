@@ -248,6 +248,7 @@ a:visited {
 
 .keyPhoto {
   border-radius: 10%;
+  height: fit-content;
 }
 
 .keyPhoto img {
@@ -481,6 +482,7 @@ a:visited {
 .footer-Email {
   /* height: 45px; */
   width: 75%;
+  color: var(--light);
   background-color: transparent;
   border: 2px solid var(--light);
   border-radius: 16px;
@@ -568,6 +570,19 @@ a:visited {
 .hide-OnMobile ul {
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 1536px) {
+  .hide-OnMobile {
+    display: flex;
+  }
+
+  .hide-NotMobile,
+  .hide-NotMobile img,
+  .sidebar {
+    display: none;
+    position: absolute;
+  }
 }
 
 @media (max-width: 1536px) {
